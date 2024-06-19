@@ -1,0 +1,23 @@
+.log-in{  
+  padding:5% 0 10% 0;
+   
+ }
+ .form-element{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   border: solid rgb(187, 184, 184) ;
+   height: auto;
+   width: 275px;
+   text-align: center;
+   padding: 10px 0px;
+ }
+ input{
+   margin: 10px 0px;
+   overflow: hidden;
+   width: 75%;
+ }
+ h3{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(19, 19, 19);
+ }

@@ -1,0 +1,31 @@
+/* footer section */
+.lower_footer{
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1d1f;
+}
+.achors_tag{
+  display: flex;
+  flex-direction: column;
+  
+}
+.achors_tag a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 5px 0px;
+  font-family:'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+.copy_right{
+  padding: 0px 48px 10px 48px;
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+  background-color: #1c1d1f;
+  font-size: 12px;
+  font-family:'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+
+}

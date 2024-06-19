@@ -1,0 +1,22 @@
+.price-calculation {
+  width: 100%; /* You can adjust the width as needed */
+  height: 100%;
+  background-color: #f0f0f0; /* Background color for visibility */
+  border-left: 1px solid #ccc; /* Optional border for separation */
+  padding: 10px; /* Padding for inner content */
+  
+  
+}
+
+.element{
+  font-family: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  line-height: 1.5;
+  color: #2d2f31;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 30px;
+}
+.pay-button{
+  text-align: center;
+  padding-top: 50px;
+}

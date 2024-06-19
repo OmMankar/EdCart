@@ -1,0 +1,26 @@
+.emptyList{
+  text-align: center;
+  width: 100%;
+  color: #2d2f31;
+  font-family:SuisseWorks,Georgia,Times,'Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.04rem;
+}
+.container-items{
+  display: flex;
+  margin: 10px 20px ;
+  width: 75%;
+  flex-wrap:wrap;
+ 
+}
+.cart-item{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.price-alculator{
+  width: 100%;
+}

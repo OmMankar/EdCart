@@ -1,0 +1,99 @@
+
+.item-inside{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px ;
+  padding: 10px;
+  width: 275px;
+  border: #eff0f3 solid;
+}
+.item-inside .delete{
+  width: 20px;
+  height: 20px;
+  position:relative;
+  top: 30px ;
+  left: 250px; 
+  background-color:rgb(196, 189, 189);
+  border: none;
+  border-radius: 50%; 
+  color:rgba(20, 19, 19, 0.226)
+}
+.item-inside img{
+  width: 100%;
+  border: rgb(220, 204, 204) solid;
+}
+.item-inside .course-name{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  white-space: wrap; 
+  width: 100%; 
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  color: #1c1d1f;
+  padding-top: 4px;
+  
+  
+}
+.item-inside .course-author{
+  font-family: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  line-height: 1.2;
+  font-size: 12px;
+  color: grey;
+  
+}
+.item-inside .rating{
+  display: flex;
+  padding: 5px 0px ;
+  font-family: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  line-height: 1.2;
+  font-size: 14px;
+  color: #2d2f31;
+  
+}
+
+.item-inside .rating-number{
+  font-weight: bold;
+  width: 50%;
+}
+.item-inside .num-of-ratings{
+  /* text-decoration: line-through; */
+  width: 20%;
+  color: grey;
+}
+.item-inside .price{
+  display: flex;
+  font-family: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  line-height: 1.2;
+  color: #2d2f31;
+  font-size: 14px;
+ 
+
+}
+.item-inside .price .discount-price{
+
+  font-weight: bold;
+  width: 50%;
+}
+.item-inside .price .original-price{
+  text-decoration: line-through;
+  width: 20%;
+  color: grey;
+}
+
+.price button,.rating button{
+  width: 70px;
+ border-radius: 5px;
+ border: 1px solid white;
+ background-color: #eceb98;
+ color: rgb(60, 59, 59);
+ font-weight: bold;
+ padding: 2px 1px;
+ 
+}
+button:hover{
+  cursor:pointer;
+  border-color: chartreuse;
+  border-width: 3px;
+}
