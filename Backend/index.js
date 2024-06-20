@@ -11,11 +11,9 @@ app.use(express.json());
 
 //unable cors for all routers
 app.use(cors(
-  {
-    origin:[],
-    methods:["POST","PUT","GET"],
-    credentials:true
-  }
+  
+   
+  
 ));
 
 //import routes for TODO API
