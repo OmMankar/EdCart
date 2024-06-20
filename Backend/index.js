@@ -10,11 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 //unable cors for all routers
-app.use(cors(
-  
-   
-  
-));
+app.use(cors());
 
 //import routes for TODO API
 const Routes = require("../Backend/route/websiteRoute");
