@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 
 
-const index = () => {
+
   //load config from env file
   require("dotenv").config();
   const PORT = process.env.PORT || 5000;
@@ -33,6 +33,4 @@ const index = () => {
   app.get("/", (req, res) => {
     res.send(`<h1>This is the homepage .</h1>`);
   });
-};
-index();
-module.exports = index;
+
