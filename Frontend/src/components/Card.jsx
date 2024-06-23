@@ -37,7 +37,7 @@ const Card = (item) => {
       setWishlist([item, ...wishlist]);
       //on can of our wishlist element
       const response = await fetch(
-        `http://localhost:3000/api/v1/Wishlist/${emailId}`,
+        `https://ed-cart-b.vercel.app/api/v1/Wishlist/${emailId}`,
         {
           method: "PUT",
           headers: {
@@ -62,7 +62,7 @@ const Card = (item) => {
     if (!cartlist.includes(item)) {
       setCartlist([item, ...cartlist]);
       const response = await fetch(
-        `http://localhost:3000/api/v1/Cartlist/${emailId}`,
+        `https://ed-cart-b.vercel.app/api/v1/Cartlist/${emailId}`,
         {
           method: "PUT",
           headers: {
@@ -85,7 +85,7 @@ const Card = (item) => {
       filteredCart = cartlist.filter((card) => card._id !== id);
       setCartlist(filteredCart);
       const response = await fetch(
-        `http://localhost:3000/api/v1/Cartlist/delete/${emailId}`,
+        `https://ed-cart-b.vercel.app/api/v1/Cartlist/delete/${emailId}`,
         {
           method: "PUT",
           headers: {
@@ -106,7 +106,7 @@ const Card = (item) => {
       setWishlist(filteredCart);
 
       const response = await fetch(
-        `http://localhost:3000/api/v1/Wishlist/delete/${emailId}`,
+        `https://ed-cart-b.vercel.app/api/v1/Wishlist/delete/${emailId}`,
         {
           method: "PUT",
           headers: {
@@ -129,7 +129,7 @@ const Card = (item) => {
       setmyLearning(filteredCart);
       //upadte the data base
       const response = await fetch(
-        `http://localhost:3000/api/v1/MyLearninglist/delete/${emailId}`,
+        `https://ed-cart-b.vercel.app/api/v1/MyLearninglist/delete/${emailId}`,
         {
           method: "PUT",
           headers: {
