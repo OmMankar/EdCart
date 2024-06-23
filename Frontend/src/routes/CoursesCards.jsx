@@ -12,7 +12,7 @@ const CoursesCards=()=>{
     const controller = new AbortController();
     const signal = controller.signal;
     setStatus(true);
-    fetch("http://localhost:3000/api/v1/",{signal}).then((res)=>{
+    fetch("https://ed-cart-b.vercel.app/api/v1/",{signal}).then((res)=>{
       
       return res.json();
     })
