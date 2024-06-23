@@ -8,7 +8,7 @@ const PriceCalculation=({totOriginalPrice,totDiscountPrice,size})=>{
     let newList = [...cartlist];
 setmyLearning([...newList,...myLearning]);
 /// add all elments to database
-const response = await fetch(`http://localhost:3000/api/v1/MyLearninglist/add/${ emailId}`, {
+const response = await fetch(`https://ed-cart-b.vercel.app/api/v1/MyLearninglist/add/${ emailId}`, {
   method: "PUT",
   headers: {
     "Content-Type": "application/json",
@@ -21,7 +21,7 @@ const response = await fetch(`http://localhost:3000/api/v1/MyLearninglist/add/${
     
     
     //update the cartlist in db
-    const respon = await fetch(`http://localhost:3000/api/v1/Cartlist/delete/all/${ emailId}`, {
+    const respon = await fetch(`https://ed-cart-b.vercel.app/api/v1/Cartlist/delete/all/${ emailId}`, {
   method: "PUT",
   headers: {
     "Content-Type": "application/json",
