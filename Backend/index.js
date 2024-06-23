@@ -2,35 +2,32 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
+//load config from env file
+require("dotenv").config();
+const PORT = process.env.PORT || 5000;
 
+//middleware to parse json request body
+app.use(express.json());
 
-  //load config from env file
-  require("dotenv").config();
-  const PORT = process.env.PORT || 5000;
+//unable cors for all routers
+app.use(cors());
 
-  //middleware to parse json request body
-  app.use(express.json());
+//import routes for TODO API
+const Routes = require("../Backend/route/websiteRoute");
 
-  //unable cors for all routers
-  app.use(cors());
+//mount the todo api routes
+app.use("/api/v1", Routes);
 
-  //import routes for TODO API
-  const Routes = require("./route/websiteRoute");
+//start the server
+app.listen(PORT, () => {
+  console.log(`Server Started at Port No. ${PORT}`);
+});
 
-  //mount the todo api routes
-  app.use("/api/v1", Routes);
+//connect to the database
+const dbConnect = require("../Backend/config/database");
+dbConnect();
 
-  //start the server
-  app.listen(PORT, () => {
-    console.log(`Server Started at Port No. ${PORT}`);
-  });
-
-  //connect to the database
-  const dbConnect = require("./config/database");
-  dbConnect();
-
-  //default Route
-  app.get("/", (req, res) => {
-    res.send(`<h1>This is the homepage .</h1>`);
-  });
-
+//default Route
+app.get("/", (req, res) => {
+  res.send(`<h1>This is the homepage .</h1>`);
+});
