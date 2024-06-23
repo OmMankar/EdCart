@@ -16,7 +16,7 @@ const SignUp = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    await fetch("http://localhost:3000/api/v1/signUp", {
+    await fetch("https://ed-cart-b.vercel.app/api/v1/signUp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
