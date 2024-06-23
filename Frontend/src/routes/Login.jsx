@@ -14,7 +14,7 @@ const LogIn=()=>{
    const handleSubmit=async (event)=>{
      event.preventDefault();
     
-     fetch("http://localhost:3000/api/v1/logIn",{
+     fetch("https://ed-cart-b.vercel.app/api/v1/logIn",{
       method:"POST",
       headers:{"Content-Type": "application/json",},
       body:JSON.stringify({
