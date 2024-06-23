@@ -9,15 +9,23 @@ import CoursesCards from './routes/CoursesCards'
 import SignUp from './routes/SignUp'
 import LogIn from './routes/Login'
 import Mylearnings from './routes/MyLearnings'
+
+
+const HOMEPAGE = import.meta.env.VITE_HOMEPAGE;
+const WISHLIST = import.meta.env.VITE_WISHLIST;
+const CART = import.meta.env.VITE_CART;
+const SIGNUP = import.meta.env.VITE_SIGNUP;
+const LOGIN = import.meta.env.VITE_LOGIN;
+const MYLEARNING = import.meta.env.VITE_MYLEARNING;
 const router=createBrowserRouter([{
-  path:"/",element: <App></App>,
+  path:HOMEPAGE,element: <App></App>,
   children:[
-    {path:"/",element: <CoursesCards></CoursesCards>,},
-      {path:"/Wishlist",element: <WishlistCards></WishlistCards>,},
-      {path:"/Cart",element: <CartCards/>,},
-      {path:"/signUp",element:<SignUp/>,},
-      {path:"/logIn",element:<LogIn/>,},
-      {path:"/myLearning",element:<Mylearnings/>,},
+    {path:HOMEPAGE,element: <CoursesCards></CoursesCards>,},
+      {path:WISHLIST,element: <WishlistCards></WishlistCards>,},
+      {path:CART,element: <CartCards/>,},
+      {path:SIGNUP,element:<SignUp/>,},
+      {path:LOGIN,element:<LogIn/>,},
+      {path:MYLEARNING,element:<Mylearnings/>,},
 
   ]
 }])
