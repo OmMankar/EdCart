@@ -9,7 +9,7 @@ import { UserContext } from "../store/user-details-store";
 // import { FaRegBell } from "react-icons/fa";
 const NavigationBar = () => {
 
-  const {emailId ,setWishlist,setCartlist,handleLoginSignUp}=useContext(UserContext);
+  const {emailId ,setWishlist,setCartlist,setmyLearning,handleLoginSignUp}=useContext(UserContext);
   return (
     <nav>
       <div className={styles.upper_nav_bar}>
@@ -53,7 +53,7 @@ const NavigationBar = () => {
          {emailId!=="" &&  <div >
           {emailId}
         </div>}
-        {emailId!=="" &&  <div className={styles.user_information} onClick={()=>{handleLoginSignUp("");setCartlist([]);setWishlist([]);alert("Successfully Logged out")}}>
+        {emailId!=="" &&  <div className={styles.user_information} onClick={()=>{handleLoginSignUp("");setCartlist([]);setWishlist([]);setmyLearning([]);alert("Successfully Logged out")}}>
           Logout
         </div>}
       </div>
