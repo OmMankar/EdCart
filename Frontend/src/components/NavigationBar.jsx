@@ -22,10 +22,10 @@ const NavigationBar = () => {
           <Link to="/" title=" Scroll Down :)  **Information Technology  **Business  **Finance **Personal Developement  **Design  **Health And Fitness  **Marketing">Categories</Link>
           
         </div>
-        <div className={styles.search_item}>
+{/*         <div className={styles.search_item}>
           <GrSearch className={styles.search_item_icon} />
           <input type="text" placeholder="Search Here" />
-        </div>
+        </div> */}
 
       
         <div className={styles.my_learning}/*onClick={()=>{handleBodyDisplay("coursesCards")}*/>
