@@ -3,7 +3,7 @@ import CourseCardlistContext from "../store/Courses-cards-store";
 import Card from "./Card";
 import styles from "./Category.module.css";
 
-const Category = ({ categoryType,curFetchingStatus, CourseCardList }) => {
+const Category = ({ categoryType,curFetchingStatus, CourseCardList,section }) => {
   // const { curFetchingStatus, CourseCardList } = useContext(CourseCardlistContext);
 
   if (curFetchingStatus) {
@@ -15,7 +15,7 @@ const Category = ({ categoryType,curFetchingStatus, CourseCardList }) => {
 
   return (
    
-    <div>
+    <div ref={section} style={{ paddingTop: '50px' }}>
       <h1>{ categoryType}</h1>
       <div className={styles["container-items"]}>
         

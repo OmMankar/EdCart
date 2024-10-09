@@ -1,6 +1,7 @@
 // import CourseCardlistContext from "../store/Courses-cards-store";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState,usesection } from "react";
 import Category from "../components/Category";
+import { UserContext } from "../store/user-details-store";
 
 const CoursesCards=()=>{
  
@@ -27,17 +28,19 @@ const CoursesCards=()=>{
     };
     
   }, []);
-
+  //for smooth scroling
+  let {section1,section2,section3,section4,section5, section6,section7}=useContext(UserContext);
+  
   return <>
-  {/* <CourseCardlistContext> */}
-  <Category categoryType={"Information Technology"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Business"}  CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Finance"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Personal Developement"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Design"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Health And Fitness"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  <Category categoryType={"Marketing"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}/>
-  {/* </CourseCardlistContext> */}
+ 
+  <Category categoryType={"Information Technology"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section1}/>
+  <Category categoryType={"Business"}  CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section2}/>
+  <Category categoryType={"Finance"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section3}/>
+  <Category categoryType={"Personal Developement"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus}  section={section4}/>
+  <Category categoryType={"Design"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section5}/>
+  <Category categoryType={"Health And Fitness"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section6}/>
+  <Category categoryType={"Marketing"} CourseCardList={CourseCardList} curFetchingStatus={curFetchingStatus} section={section7}/>
+ 
   
 
   </>;

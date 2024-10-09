@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <UserContextProvider>
-      <NavigationBar /*handleBodyDisplay={handleBodyDisplay}*/ />
+      <NavigationBar />
       <Body /*bodyDisplay={bodyDisplay}*/ />
       <FooterBar/>
       </UserContextProvider>
